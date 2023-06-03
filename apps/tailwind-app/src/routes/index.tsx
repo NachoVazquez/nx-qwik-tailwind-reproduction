@@ -1,14 +1,12 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { Link } from '@builder.io/qwik-city';
+import { TailwindLib } from '@nx-qwik-tailwind/tailwind-lib';
 
 export default component$(() => {
   return (
     <div>
-      <h1>
-        Welcome tailwind-app <span class="lightning">⚡️</span>
-      </h1>
-
+      <TailwindLib />
       <ul>
         <li>
           Check out the <code>src/routes</code> directory to get started.

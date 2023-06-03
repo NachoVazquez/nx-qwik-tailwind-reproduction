@@ -4,7 +4,11 @@ const { join } = require('path');
 module.exports = {
   content: [join(__dirname, 'src/**/*.{js,ts,jsx,tsx,mdx}')],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        my: { color: '#155555' },
+      },
+    },
   },
   plugins: [],
 };

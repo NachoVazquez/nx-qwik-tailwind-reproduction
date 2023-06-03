@@ -1,9 +1,5 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-
-import styles from './tailwind-lib.css?inline';
+import { component$ } from '@builder.io/qwik';
 
 export const TailwindLib = component$(() => {
-  useStylesScoped$(styles);
-
-  return <>TailwindLib works!</>;
+  return <h1 class="text-my-color">TailwindLib works!</h1>;
 });
